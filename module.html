@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-UA-compatible" content="IE=-edge"/>
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>User Registration</title>
+    <style>
+        body {
+            background-image: url("vel1.webp");
+        }
+    </style>
+</head>
+<body>
+    <label>Name:</label>
+    <input type="text" name="name" size="35"/><br><br>
+    <label>Gender:</label><br>
+    <select>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Transgender">Transgender</option>
+    </select>
+    <br><br>
+    <button onclick="executeZodiac()">Get Zodiac Sign</button>
+
+    <script>
+        function executeZodiac() {
+            // Assuming 'zodiac.py' script will be executed on the server side
+            // You might need server-side execution, e.g., using Flask, to run the Python script.
+            // Here you'll make an AJAX call to the server to execute the script.
+            // For simplicity, you can use a placeholder function for execution:
+            // alert("Zodiac sign executed!"); // Replace this with your server-side code.
+            location.href="horoscope.html";
+        }
+    </script>
+</body>
+</html>
